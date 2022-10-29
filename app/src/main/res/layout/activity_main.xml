@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/swbg3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Stop Watch"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="639dp" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/green"
+        android:onClick="startChronometer"
+        android:padding="10dp"
+        android:text="START"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:onClick="holdChronometer"
+        android:padding="10dp"
+        android:text="HOLD"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/red"
+        android:onClick="stopChronometer"
+        android:padding="10dp"
+        android:text="STOP"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
